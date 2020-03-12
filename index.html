@@ -9,25 +9,25 @@
     <div class="container">
       <header class="header">
         <h2 class="header__logo logo">Cakes</h2>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Наши торты</a>
+        <nav class="header__navigation main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Наши торты</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Индивидуальный заказ</a>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Индивидуальный заказ</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Отзывы</a>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Отзывы</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">О нас</a>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">О нас</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Как заказать</a>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Как заказать</a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Контакты</a>
+            <li class="main-navigation__item">
+              <a href="#" class="main-navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -42,7 +42,7 @@
         <section class="promo">
           <h1 class="promo__title">Торты на заказ</h1>
           <h2 class="promo__subtitle">Ручная работа</h2>
-          <a href="#" class="promo__link btn">Выбрать торт</a>
+          <a href="#" class="promo__link button">Выбрать торт</a>
           <ul class="promo__features features">
             <li class="features__item">
               <p class="features__description">Натуральные ингредиенты</p>
@@ -110,9 +110,8 @@
           <p class="order__description">Соберите торт в 3 шага</p>
           <ol class="order__list">
             <li class="order__item step">
-              <h3 class="step__title">
-                <span class="step__number">01 </span>Выберите начинку
-              </h3>
+              <span class="step__number">01</span>
+              <h3 class="step__title">Выберите начинку</h3>
               <div class="step__slider slider">
                 <div class="slider__item ingredient">
                   <div class="ingredient__image-wrapper">
@@ -128,7 +127,7 @@
                     шоколадный из всех возможных десертов!
                   </p>
                   <p class="ingredient__price">1000&nbsp;руб/кг</p>
-                  <button class="ingredient__button btn" type="button">
+                  <button class="ingredient__button button" type="button">
                     Выбрать
                   </button>
                 </div>
@@ -147,9 +146,8 @@
             </li>
 
             <li class="order__item step">
-              <h3 class="step__title">
-                <span class="step__number">02 </span>Размер
-              </h3>
+              <span class="step__number">02</span>
+              <h3 class="step__title">Размер</h3>
               <div class="step__size-selection size-selection">
                 <ul class="size-selection__list">
                   <li class="size-selection__item">
@@ -197,9 +195,8 @@
             </li>
 
             <li class="order__item step">
-              <h3 class="step__title">
-                <span class="step__number">03 </span>Оформление
-              </h3>
+              <span class="step__number">03</span>
+              <h3 class="step__title">Оформление</h3>
               <div class="step__slider slider">
                 <div class="slider__item decoration">
                   <ul class="decoration__list">
@@ -234,11 +231,15 @@
                 <button
                   class="slider__side-control slider__side-control--left"
                   type="button"
-                ></button>
+                >
+                  Назад
+                </button>
                 <button
                   class="slider__side-control slider__side-control--right"
                   type="button"
-                ></button>
+                >
+                  Вперёд
+                </button>
                 <div class="slider__pagination">
                   <span class="slider__slide-number">2/35</span>
                 </div>
@@ -302,18 +303,22 @@
                 <a href="#" class="review__more">Развернуть</a>
               </p>
               <p class="review__price">1000&nbsp;руб/кг</p>
-              <button class="review__button btn" type="button">
+              <button class="review__button button" type="button">
                 Выбрать
               </button>
             </div>
             <button
               class="slider__side-control slider__side-control--left"
               type="button"
-            ></button>
+            >
+              Назад
+            </button>
             <button
               class="slider__side-control slider__side-control--right"
               type="button"
-            ></button>
+            >
+              Вперёд
+            </button>
             <div class="slider__pagination">
               <span class="slider__slide-number slider__slide-number--bright"
                 >1/26</span
@@ -381,9 +386,8 @@
               </p>
             </li>
           </ul>
-          <h3 class="advantages__subtitle">
-            <strong>Забота о клиентах</strong> Для нас важна
-          </h3>
+          <h2 class="advantages__title">Забота о клиентах</h2>
+          <h3 class="advantages__subtitle">Для нас важна</h3>
           <p class="advantages__feature-description">
             Нам важно чтобы каждый торт был безупречным, как внутри, так и
             снаружи, чтобы он был создан исключительно для вас и для вашего
@@ -443,7 +447,7 @@
                 name="message"
                 placeholder="Ваш вопрос"
               />
-              <button class="contact-form__submit btn" type="submit">
+              <button class="contact-form__submit button" type="submit">
                 Отправить
               </button>
             </form>
@@ -478,27 +482,27 @@
 
       <footer class="footer">
         <h2 class="footer__logo logo logo--large">Cakes</h2>
-        <nav class="footer__navigation">
-          <ul class="footer__navigation-list">
-            <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Наши торты</a>
+        <nav class="footer__navigation additional-navigation">
+          <ul class="additional-navigation__list">
+            <li class="additional-navigation__item">
+              <a href="#" class="additional-navigation__link">Наши торты</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link"
+            <li class="additional-navigation__item">
+              <a href="#" class="additional-navigation__link"
                 >Индивидуальный заказ</a
               >
             </li>
-            <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Отзывы</a>
+            <li class="additional-navigation__item">
+              <a href="#" class="additional-navigation__link">Отзывы</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">О нас</a>
+            <li class="additional-navigation__item">
+              <a href="#" class="additional-navigation__link">О нас</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Как заказать</a>
+            <li class="additional-navigation__item">
+              <a href="#" class="additional-navigation__link">Как заказать</a>
             </li>
-            <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Контакты</a>
+            <li class="additional-navigation__item">
+              <a href="#" class="additional-navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -512,7 +516,7 @@
             </li>
           </ul>
         </div>
-        <p class="footer__copyright">©&nbsp;2018 Cakes</p>
+        <p class="footer__copyright">©&nbsp;2018&nbsp;Cakes</p>
       </footer>
     </div>
   </body>
