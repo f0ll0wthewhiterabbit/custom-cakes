@@ -1,0 +1,125 @@
+/* fonts */
+@font-face {
+  font-weight: normal;
+  font-family: "Ubuntu";
+  font-style: normal;
+
+  src: url("../fonts/ubuntu-regular.woff2") format("woff2"),
+    url("../fonts/ubuntu-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Ubuntu";
+  font-style: normal;
+
+  src: url("../fonts/ubuntu-bold.woff2") format("woff2"),
+    url("../fonts/ubuntu-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "IntroScriptR";
+  font-style: normal;
+
+  src: url("../fonts/introscriptr-h2base.woff2") format("woff2"),
+    url("../fonts/introscriptr-h2base.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+
+  src: url("../fonts/playfairdisplay-bold.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PlayfairDisplay";
+  font-style: italic;
+
+  src: url("../fonts/playfairdisplay-bolditalic.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-bolditalic.woff") format("woff");
+}
+
+/* icomoon */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?dmbzvv");
+  src: url("../fonts/icomoon.eot?dmbzvv#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?dmbzvv") format("truetype"),
+    url("../fonts/icomoon.woff?dmbzvv") format("woff"),
+    url("../fonts/icomoon.svg?dmbzvv#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-left:before {
+  content: "\e906";
+}
+.icon-chevron-right:before {
+  content: "\e907";
+}
+.icon-delivery:before {
+  content: "\e900";
+}
+.icon-ingredients:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-right-arrow:before {
+  content: "\e903";
+}
+.icon-twitter:before {
+  content: "\e904";
+}
+.icon-vk:before {
+  content: "\e905";
+}
+
+/* Common styles */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* page */
+.page {
+  min-width: 320px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  color: #000;
+  font-style: normal;
+}
