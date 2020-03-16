@@ -141,6 +141,7 @@ img {
 
   font-family: "Ubuntu", "Verdana", sans-serif;
   font-size: 20px;
+  font-weight: normal;
   font-style: normal;
   line-height: 1.2;
 }
@@ -177,6 +178,9 @@ img {
   }
 
   .header__container {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 46px;
     padding-left: 46px;
 
@@ -194,6 +198,7 @@ img {
   }
 
   .header__container {
+    max-width: 1366px;
     padding-top: 55px;
     padding-right: 74px;
     padding-left: 74px;
@@ -208,7 +213,7 @@ img {
 
 /* logo */
 .logo {
-  color: inherit;
+  color: #000000;
 
   font-family: "PlayfairDisplay", serif;
   font-size: 16px;
@@ -339,8 +344,11 @@ img {
 
   color: #383838;
 
-  font: inherit;
+  font-family: "Ubuntu", "Verdana", sans-serif;
   font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
 }
 
 .main-navigation__link:hover {
@@ -441,4 +449,206 @@ img {
 
 .contact__phone:hover {
   color: #f50049;
+}
+
+/* promo */
+.promo__container {
+  padding: 125px 20px 20px;
+
+  text-align: center;
+
+  background-image: url("/images/promo-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.promo__title {
+  margin: 0 0 15px;
+
+  font-family: "PlayfairDisplay", serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.promo__subtitle {
+  margin: 0 0 15px;
+
+  color: #32313d;
+
+  font-family: "IntroScriptR", cursive;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.promo__link {
+  width: 227px;
+}
+
+@media (min-width: 768px) {
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 112px 48px;
+
+    text-align: left;
+
+    background-image: url("/images/promo-bg-tablet.png");
+    background-position: right top 15px;
+  }
+
+  .promo__title {
+    max-width: 320px;
+    margin-bottom: 20px;
+
+    font-size: 60px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
+
+  .promo__features {
+    order: 1;
+  }
+
+  .promo__link {
+    margin-bottom: 140px;
+  }
+
+  .promo__features {
+    display: flex;
+  }
+}
+
+@media (min-width: 1366px) {
+  .promo {
+    background: none;
+  }
+
+  .promo__container {
+    position: relative;
+
+    max-width: 1366px;
+    margin-bottom: -70px;
+    padding: 140px 74px 320px;
+
+    background-image: url("/images/promo-bg-desktop.png");
+    background-position: right top;
+  }
+
+  .promo__title {
+    max-width: 485px;
+
+    font-size: 78px;
+  }
+
+  .promo__subtitle {
+    font-size: 41px;
+  }
+}
+
+/* features */
+.features {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+.features__item:last-child {
+  margin-bottom: 40px;
+}
+
+.features__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: #f50049;
+
+  font-size: 30px;
+}
+
+.features__description {
+  margin: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .features__item {
+    margin-bottom: 0;
+    padding-left: 70px;
+  }
+
+  .features__item:first-child {
+    max-width: 196px;
+    margin-right: 24px;
+  }
+
+  .features__item:last-child {
+    max-width: 261px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .features__item::before {
+    top: -16px;
+
+    font-size: 50px;
+  }
+}
+
+/* button */
+.button {
+  display: inline-block;
+
+  padding: 16px 25px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border-radius: 25px;
+  background-color: #f50049;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  box-shadow: 0 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
 }
