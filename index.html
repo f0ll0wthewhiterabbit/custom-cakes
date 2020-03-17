@@ -467,42 +467,84 @@
       </section>
 
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__slider slider">
-          <div class="slider__item review">
-            <div class="review__image-wrapper">
-              <img src="#" alt="Мария" class="review__image" />
+        <div class="reviews__container">
+          <h2 class="reviews__title section-title">Отзывы</h2>
+          <section class="review">
+            <div class="reviews__slider slider">
+              <div class="review__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1366px)"
+                    srcset="images/client-photo-desktop.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/client-photo-tablet.jpg"
+                  />
+                  <img
+                    src="images/client-photo-mobile.jpg"
+                    alt="Мария"
+                    class="review__image"
+                  />
+                </picture>
+              </div>
+              <h3 class="review__title">Мария</h3>
+              <p class="review__info">юрист, 33&nbsp;года</p>
+              <p class="review__text">
+                Заказывала торт брауни на юбилей мужа. Гости были в восторге!
+                Отдельное спасибо за своевременную доставку! Теперь будем
+                заказывать торты только у вас для наших семейных праздников:)
+                <a href="#" class="review__more">Развернуть</a>
+              </p>
+              <button
+                class="review__side-control review__side-control--left slider__side-control icon-chevron-left"
+                type="button"
+              >
+                Назад
+              </button>
+              <button
+                class="review__side-control review__side-control--right slider__side-control icon-chevron-right"
+                type="button"
+              >
+                Вперёд
+              </button>
+              <ul class="review__pagination slider__pagination">
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagination__link--active"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagingation__link--contrast"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagingation__link--contrast"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagingation__link--contrast"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagingation__link--contrast slider__pagination__link--more"
+                  ></a>
+                </li>
+              </ul>
+              <span class="slider__slide-number review__slide-number"
+                >1/26</span
+              >
             </div>
-            <h3 class="review__title">Мария</h3>
-            <p class="review__info">юрист, 33&nbsp;года</p>
-            <p class="review__text">
-              Заказывала торт брауни на юбилей мужа. Гости были в восторге!
-              Отдельное спасибо за своевременную доставку! Теперь будем
-              заказывать торты только у вас для наших семейных праздников:)
-              <a href="#" class="review__more">Развернуть</a>
-            </p>
-            <p class="review__price">1000&nbsp;руб/кг</p>
-            <button class="review__button button" type="button">
-              Выбрать
-            </button>
-          </div>
-          <button
-            class="slider__side-control slider__side-control--left"
-            type="button"
-          >
-            Назад
-          </button>
-          <button
-            class="slider__side-control slider__side-control--right"
-            type="button"
-          >
-            Вперёд
-          </button>
-          <div class="slider__pagination">
-            <span class="slider__slide-number slider__slide-number--bright"
-              >1/26</span
-            >
-          </div>
+          </section>
         </div>
       </section>
 
