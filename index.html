@@ -73,7 +73,9 @@
             >
               <h3 class="product-card__title">Классические</h3>
               <p class="product-card__amount">24 вида</p>
-              <span class="product-card__invitation">Смотреть</span>
+              <div class="product-card__invitation icon-right-arrow">
+                <span class="product-card__invitation-text">Смотреть</span>
+              </div>
             </a>
             <div class="catalog__column-wrapper">
               <a
@@ -82,7 +84,9 @@
               >
                 <h3 class="product-card__title">Муссовые</h3>
                 <p class="product-card__amount">12 видов</p>
-                <span class="product-card__invitation">Смотреть</span>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
               </a>
               <a
                 href="#"
@@ -90,14 +94,18 @@
               >
                 <h3 class="product-card__title">Свадебные</h3>
                 <p class="product-card__amount">20 видов</p>
-                <span class="product-card__invitation">Смотреть</span>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
               </a>
             </div>
             <div class="catalog__column-wrapper">
               <a href="#" class="catalog__item product-card product-card--men">
                 <h3 class="product-card__title">Мужчинам</h3>
                 <p class="product-card__amount">12 видов</p>
-                <span class="product-card__invitation">Смотреть</span>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
               </a>
               <a
                 href="#"
@@ -105,7 +113,9 @@
               >
                 <h3 class="product-card__title">Женщинам</h3>
                 <p class="product-card__amount">16 видов</p>
-                <span class="product-card__invitation">Смотреть</span>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
               </a>
             </div>
             <a
@@ -114,192 +124,346 @@
             >
               <h3 class="product-card__title">Детские</h3>
               <p class="product-card__amount">18 видов</p>
-              <span class="product-card__invitation">Смотреть</span>
+              <div class="product-card__invitation icon-right-arrow">
+                <span class="product-card__invitation-text">Смотреть</span>
+              </div>
             </a>
           </div>
         </div>
       </section>
 
       <section class="order">
-        <h2 class="order__title">Индивидуальный заказ</h2>
-        <p class="order__description">Соберите торт в 3 шага</p>
-        <ol class="order__list">
-          <li class="order__item step">
-            <span class="step__number">01</span>
-            <h3 class="step__title">Выберите начинку</h3>
-            <div class="step__slider slider">
-              <div class="slider__item ingredient">
-                <div class="ingredient__image-wrapper">
-                  <img
-                    src="#"
-                    alt="Шоколадный ганаш"
-                    class="ingredient__image"
-                  />
+        <div class="order__container">
+          <h2 class="order__title section-title">Индивидуальный заказ</h2>
+          <p class="order__description">Соберите торт в 3 шага</p>
+          <ol class="order__list">
+            <li class="order__item step">
+              <h3 class="step__title">
+                <span class="step__number">01 </span>Выберите начинку
+              </h3>
+              <section class="ingredient">
+                <div class="ingredient__slider slider">
+                  <div class="ingredient__image-wrapper">
+                    <picture>
+                      <source
+                        media="(min-width: 1366px)"
+                        srcset="images/filling-photo-desktop.jpg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="images/filling-photo-tablet.jpg"
+                      />
+                      <img
+                        src="images/filling-photo-mobile.jpg"
+                        alt="Шоколадный ганаш"
+                        class="ingredient__image"
+                      />
+                    </picture>
+                    <span class="slider__slide-number ingredient__slide-number"
+                      >1/12</span
+                    >
+                  </div>
+                  <ul class="ingredient__pagination slider__pagination">
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--active"
+                      ></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--more"
+                      ></a>
+                    </li>
+                  </ul>
+                  <h5 class="ingredient__title">Шоколадный ганаш</h5>
+                  <p class="ingredient__description">
+                    Ароматный шоколадный бисквит, густой шоколадный крем – самый
+                    шоколадный из всех возможных десертов!
+                  </p>
+                  <p class="ingredient__price">1000&nbsp;руб/кг</p>
+                  <button class="ingredient__button button" type="button">
+                    Выбрать
+                  </button>
+
+                  <button
+                    class="ingredient__side-control ingredient__side-control--left slider__side-control icon-chevron-left"
+                    type="button"
+                  >
+                    Назад
+                  </button>
+                  <button
+                    class="ingredient__side-control ingredient__side-control--right slider__side-control icon-chevron-right"
+                    type="button"
+                  >
+                    Вперёд
+                  </button>
                 </div>
-                <h5 class="ingredient__title">Шоколадный ганаш</h5>
-                <p class="ingredient__description">
-                  Ароматный шоколадный бисквит, густой шоколадный крем – самый
-                  шоколадный из всех возможных десертов!
-                </p>
-                <p class="ingredient__price">1000&nbsp;руб/кг</p>
-                <button class="ingredient__button button" type="button">
-                  Выбрать
-                </button>
-              </div>
-              <button
-                class="slider__side-control slider__side-control--left"
-                type="button"
-              ></button>
-              <button
-                class="slider__side-control slider__side-control--right"
-                type="button"
-              ></button>
-              <div class="slider__pagination">
-                <span class="slider__slide-number">1/12</span>
-              </div>
-            </div>
-          </li>
+              </section>
+            </li>
 
-          <li class="order__item step">
-            <span class="step__number">02</span>
-            <h3 class="step__title">Размер</h3>
-            <div class="step__size-selection size-selection">
-              <ul class="size-selection__list">
-                <li class="size-selection__item">
-                  <button class="size-selection__button" type="button">
-                    1кг
-                  </button>
-                  <p class="size-selection__description">17-18&nbsp;см</p>
-                  <p class="size-selection__description">
-                    (1&nbsp;кг&nbsp;–&nbsp;6&nbsp;персон)
-                  </p>
-                </li>
-                <li class="size-selection__item">
-                  <button class="size-selection__button" type="button">
-                    2кг
-                  </button>
-                  <p class="size-selection__description">23-24&nbsp;см</p>
-                  <p class="size-selection__description">
-                    (10–12&nbsp;персон)
-                  </p>
-                </li>
-                <li class="size-selection__item">
-                  <button class="size-selection__button" type="button">
-                    5кг
-                  </button>
-                  <p class="size-selection__description">
-                    Два яруса 25 и 20&nbsp;см
-                  </p>
-                  <p class="size-selection__description">
-                    (15–20&nbsp;персон)
-                  </p>
-                </li>
-                <li class="size-selection__item">
-                  <button class="size-selection__button" type="button">
-                    8кг
-                  </button>
-                  <p class="size-selection__description">
-                    Три яруса 30,25 и 18&nbsp;см
-                  </p>
-                  <p class="size-selection__description">
-                    (25–30&nbsp;персон)
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </li>
+            <li class="order__item step">
+              <h3 class="step__title">
+                <span class="step__number">02 </span>Размер
+              </h3>
+              <section class="size-selection">
+                <div class="size-selection__slider slider">
+                  <ul class="size-selection__list">
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--small"
+                        type="button"
+                      >
+                        1кг
+                      </button>
+                      <p class="size-selection__description">17-18&nbsp;см</p>
+                      <p class="size-selection__description">
+                        (1&nbsp;кг&nbsp;–&nbsp;6&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--medium"
+                        type="button"
+                      >
+                        2кг
+                      </button>
+                      <p class="size-selection__description">23-24&nbsp;см</p>
+                      <p class="size-selection__description">
+                        (10–12&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--large"
+                        type="button"
+                      >
+                        5кг
+                      </button>
+                      <p class="size-selection__description">
+                        Два яруса 25 и 20&nbsp;см
+                      </p>
+                      <p class="size-selection__description">
+                        (15–20&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--extra-large"
+                        type="button"
+                      >
+                        8кг
+                      </button>
+                      <p class="size-selection__description">
+                        Три яруса 30,25 и 18&nbsp;см
+                      </p>
+                      <p class="size-selection__description">
+                        (25–30&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="size-selection__pagination slider__pagination">
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--active"
+                      ></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </li>
 
-          <li class="order__item step">
-            <span class="step__number">03</span>
-            <h3 class="step__title">Оформление</h3>
-            <div class="step__slider slider">
-              <div class="slider__item decoration">
-                <ul class="decoration__list">
-                  <li class="decoration__item">
-                    <button class="decoration__button" type="button">
-                      <div class="decoration__image-wrapper">
-                        <img
-                          src="#"
-                          alt="Ягодное ассорти"
-                          class="decoration__image"
-                        />
-                      </div>
-                      <h5 class="decoration__title">Ягодное ассорти</h5>
-                      <p class="decoration__price">700&nbsp;руб/кг</p>
-                    </button>
-                  </li>
-                  <li class="decoration__item">
-                    <button class="decoration__button" type="button">
-                      <div class="decoration__image-wrapper">
-                        <img
-                          src="#"
-                          alt="Маршмэллоу"
-                          class="decoration__image"
-                        />
-                      </div>
-                      <h5 class="decoration__title">Маршмэллоу</h5>
-                      <p class="decoration__price">600&nbsp;руб/кг</p>
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <button
-                class="slider__side-control slider__side-control--left"
-                type="button"
-              >
-                Назад
-              </button>
-              <button
-                class="slider__side-control slider__side-control--right"
-                type="button"
-              >
-                Вперёд
-              </button>
-              <div class="slider__pagination">
-                <span class="slider__slide-number">2/35</span>
-              </div>
-            </div>
+            <li class="order__item order__item--decorated step">
+              <h3 class="step__title">
+                <span class="step__number">03 </span>Оформление
+              </h3>
+              <section class="decoration">
+                <div class="decoration__slider slider">
+                  <ul class="decoration__list">
+                    <li class="decoration__item">
+                      <button class="decoration__select" type="button">
+                        <div class="decoration__image-wrapper">
+                          <picture>
+                            <source
+                              media="(min-width: 1366px)"
+                              srcset="images/product-1-desktop.jpg"
+                            />
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="images/product-1-tablet.jpg"
+                            />
+                            <img
+                              src="images/product-1-tablet.jpg"
+                              alt="Ягодное ассорти"
+                              class="decoration__image"
+                            />
+                          </picture>
+                        </div>
+                        <div class="decoration__info">
+                          <h5 class="decoration__title">Ягодное ассорти</h5>
+                          <p class="decoration__price">700&nbsp;руб/кг</p>
+                        </div>
+                      </button>
+                      <button class="decoration__button button" type="button">
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="decoration__item">
+                      <button class="decoration__select" type="button">
+                        <div class="decoration__image-wrapper">
+                          <picture>
+                            <source
+                              media="(min-width: 1366px)"
+                              srcset="images/product-2-desktop.jpg"
+                            />
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="images/product-2-tablet.jpg"
+                            />
+                            <img
+                              src="images/product-2-mobile.jpg"
+                              alt="Маршмэллоу"
+                              class="decoration__image"
+                            />
+                          </picture>
+                          <span
+                            class="slider__slide-number decoration__slide-number"
+                            >2/35</span
+                          >
+                        </div>
+                        <div class="decoration__info">
+                          <h5 class="decoration__title">Маршмэллоу</h5>
+                          <p class="decoration__price">600&nbsp;руб/кг</p>
+                        </div>
+                      </button>
+                      <button class="decoration__button button" type="button">
+                        Выбрать
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="decoration__pagination slider__pagination">
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--active"
+                      ></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--more"
+                      ></a>
+                    </li>
+                  </ul>
+                  <button
+                    class="decoration__side-control decoration__side-control--left slider__side-control icon-chevron-left"
+                    type="button"
+                  >
+                    Назад
+                  </button>
+                  <button
+                    class="decoration__side-control decoration__side-control--right slider__side-control icon-chevron-right"
+                    type="button"
+                  >
+                    Вперёд
+                  </button>
+                </div>
+              </section>
 
-            <div class="result">
-              <h4 class="result__title">Ваш выбор</h4>
-              <form class="result__form">
-                <fieldset class="result__field">
-                  <label for="filling" class="result__label">Начинка</label>
-                  <input
-                    type="text"
-                    class="result__input"
-                    id="filling"
-                    name="filling"
-                    value="Шоколадный ганаш"
-                  />
-                </fieldset>
-                <fieldset class="result__field">
-                  <label for="size" class="result__label">Размер</label>
-                  <input
-                    type="text"
-                    class="result__input"
-                    id="size"
-                    name="size"
-                    value="2 кг"
-                  />
-                </fieldset>
-                <fieldset class="result__field">
-                  <label for="decor" class="result__label">Оформление</label>
-                  <input
-                    type="text"
-                    class="result__input"
-                    id="decor"
-                    name="decor"
-                    value="Маршмэллоу"
-                  />
-                </fieldset>
-                <button class="result__submit" type="submit">
-                  Заказать торт
-                </button>
-              </form>
-            </div>
-          </li>
-        </ol>
+              <section class="result">
+                <h4 class="result__title">Ваш выбор</h4>
+                <form class="result__form">
+                  <fieldset class="result__field">
+                    <label for="filling" class="result__label">Начинка</label>
+                    <input
+                      type="text"
+                      class="result__input"
+                      id="filling"
+                      name="filling"
+                      value="Шоколадный ганаш"
+                    />
+                  </fieldset>
+                  <fieldset class="result__field result__field--small">
+                    <label for="size" class="result__label">Размер</label>
+                    <input
+                      type="text"
+                      class="result__input"
+                      id="size"
+                      name="size"
+                      value="2 кг"
+                    />
+                  </fieldset>
+                  <fieldset class="result__field">
+                    <label for="decor" class="result__label">Оформление</label>
+                    <input
+                      type="text"
+                      class="result__input"
+                      id="decor"
+                      name="decor"
+                      value="Маршмэллоу"
+                    />
+                  </fieldset>
+                  <button class="result__submit button" type="submit">
+                    Заказать торт
+                  </button>
+                </form>
+              </section>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section class="reviews">
