@@ -684,57 +684,74 @@
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <h3 class="contacts__subtitle">Остались вопросы?</h3>
-        <div class="contacts__form-wrapper">
-          <p class="contacts__info">
-            Заполните форму ниже и наш кондитер свяжется с Вами
-          </p>
-          <form class="contacts__form contact-form">
-            <input
-              type="text"
-              class="contact-form__input"
-              name="name"
-              placeholder="Ваше имя"
-            />
-            <input
-              type="email"
-              class="contact-form__input"
-              name="email"
-              placeholder="Email адрес"
-            />
-            <input
-              type="text"
-              class="contact-form__input"
-              name="message"
-              placeholder="Ваш вопрос"
-            />
-            <button class="contact-form__submit button" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
-        <div class="contacts__links-wrapper">
-          <p class="contacts__info">
-            Или позвоните по телефону:
-            <a href="tel:+79068999296" class="contacts__link"
-              >+7&nbsp;906&nbsp;899&nbsp;92&nbsp;96</a
-            >
-          </p>
-          <p class="contacts__info">
-            Наша почта:
-            <a href="mailto:bakerybypavel@mail.ru" class="contacts__link"
-              >bakerybypavel@mail.ru</a
-            >
-          </p>
-          <p class="contacts__info">Мы в соц. сетях:</p>
-          <div class="contacts__social-links social-links">
-            <ul class="social-links__list">
-              <li class="social-links__item social-links__item--large">
-                <a href="#" class="social-links__link">Мы в Инстаграме</a>
+        <div class="contacts__container">
+          <h2 class="contacts__title section-title">Контакты</h2>
+          <h3 class="contacts__subtitle">Остались вопросы?</h3>
+          <div class="contacts__form-wrapper">
+            <p class="contacts__instruction">
+              Заполните форму ниже и наш кондитер свяжется с Вами
+            </p>
+            <form class="contacts__form contact-form">
+              <input
+                type="text"
+                class="contact-form__input"
+                name="name"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="email"
+                class="contact-form__input"
+                name="email"
+                placeholder="Email адрес"
+              />
+              <input
+                type="text"
+                class="contact-form__input contact-form__input--question"
+                name="question"
+                placeholder="Ваш вопрос"
+              />
+              <textarea
+                class="contact-form__textarea"
+                name="message"
+                placeholder="Ваш вопрос"
+              ></textarea>
+              <button class="contact-form__submit button" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+          <div class="contacts__links-wrapper">
+            <p class="contacts__info">
+              Или позвоните по телефону:
+              <a href="tel:+79068999296" class="contacts__link"
+                >+7&nbsp;906&nbsp;899&nbsp;92&nbsp;96</a
+              >
+            </p>
+            <p class="contacts__info">
+              Наша почта:
+              <a href="mailto:bakerybypavel@mail.ru" class="contacts__link"
+                >bakerybypavel@mail.ru</a
+              >
+            </p>
+            <p class="contacts__info">Мы в соц. сетях:</p>
+            <ul class="contacts__social-links social-links">
+              <li
+                class="social-links__item social-links__item--large contacts__social-links-item"
+              >
+                <a
+                  href="#"
+                  class="social-links__link social-links__link--instagram icon-instagram"
+                  >Павел в Инстаграме</a
+                >
               </li>
-              <li class="social-links__item social-links__item--large">
-                <a href="#" class="social-links__link">Мы в Вконтакте</a>
+              <li
+                class="social-links__item social-links__item--large contacts__social-links-item"
+              >
+                <a
+                  href="#"
+                  class="social-links__link social-links__link--vk icon-vk"
+                  >Павел в Вконтакте</a
+                >
               </li>
             </ul>
           </div>
