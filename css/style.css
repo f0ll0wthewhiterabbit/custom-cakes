@@ -2735,7 +2735,6 @@ img {
 
 /* advantages */
 .advantages {
-  margin-bottom: 35px;
   padding-top: 40px;
 }
 
@@ -2743,8 +2742,7 @@ img {
   max-width: 768px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 20px 172px;
-  padding-top: 20px;
+  padding: 20px 20px 172px;
 
   background-image: url("/images/advantages-bg-mobile.png");
   background-repeat: no-repeat;
@@ -3019,5 +3017,192 @@ img {
 
   .advantages__additional-info .advantages__subtitle {
     margin-bottom: 20px;
+  }
+}
+
+/* order-instruction */
+.order-instruction {
+  background-color: #e3353d;
+}
+
+.order-instruction__container {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 35px 20px 155px;
+
+  background-image: url("/images/order-instruction-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.order-instruction__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.order-instruction__list {
+  margin: 0;
+  padding: 0 15px 0 46px;
+
+  list-style: none;
+
+  counter-reset: list-counter;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.order-instruction__item {
+  position: relative;
+
+  margin-bottom: 25px;
+
+  counter-increment: list-counter;
+}
+
+.order-instruction__item:last-child {
+  margin-bottom: 0;
+}
+
+.order-instruction__item::before {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+
+  content: counter(list-counter);
+
+  font-family: "PlayfairDisplay", serif;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+}
+
+.order-instruction__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.order-instruction__description {
+  margin: 0;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .order-instruction {
+    position: relative;
+  }
+
+  .order-instruction::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 522px;
+    height: 367px;
+
+    content: "";
+    transform: translateX(-580px);
+
+    background-image: url("/images/order-instruction-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .order-instruction__container {
+    padding: 55px 48px 65px 329px;
+
+    background-image: none;
+  }
+
+  .order-instruction__title {
+    margin-bottom: 35px;
+
+    text-align: left;
+  }
+
+  .order-instruction__list {
+    padding-right: 20px;
+    padding-left: 42px;
+  }
+
+  .order-instruction__item {
+    margin-bottom: 35px;
+  }
+
+  .order-instruction__item::before {
+    top: -10px;
+    left: -50px;
+
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .order-instruction {
+    position: relative;
+  }
+
+  .order-instruction::before {
+    display: none;
+  }
+  .order-instruction__container {
+    min-width: 1366px;
+    padding: 125px 74px 185px 830px;
+
+    background-image: url("/images/order-instruction-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  .order-instruction__title {
+    margin-bottom: 47px;
+  }
+
+  .order-instruction__list {
+    padding-right: 0;
+    padding-left: 35px;
+  }
+
+  .order-instruction__item {
+    margin-bottom: 40px;
+  }
+
+  .order-instruction__item::before {
+    top: -20px;
+    left: -65px;
+
+    width: 40px;
+
+    text-align: right;
+
+    font-size: 64px;
+  }
+
+  .order-instruction__subtitle {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+  }
+
+  .order-instruction__description {
+    font-size: 20px;
   }
 }
