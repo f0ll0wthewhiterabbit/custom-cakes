@@ -617,7 +617,28 @@ img {
 
 @media (min-width: 768px) {
   .promo {
+    position: relative;
+
     margin-bottom: 46px;
+  }
+
+  .promo::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 632px;
+    height: 571px;
+
+    content: "";
+    transform: translate(-112px, 13px);
+
+    background-image: url("/images/promo-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .promo__container {
@@ -631,8 +652,7 @@ img {
 
     text-align: left;
 
-    background-image: url("/images/promo-bg-tablet.png");
-    background-position: right top 15px;
+    background: none;
   }
 
   .promo__title {
@@ -669,8 +689,15 @@ img {
 @media (min-width: 1366px) {
   .promo {
     margin-bottom: 3px;
+  }
 
-    background: none;
+  .promo::before {
+    width: 1179px;
+    height: 941px;
+
+    transform: translate(-325px, 0px);
+
+    background-image: url("/images/promo-bg-desktop.png");
   }
 
   .promo__container {
@@ -679,9 +706,6 @@ img {
     max-width: 1366px;
     margin-bottom: -70px;
     padding: 130px 74px 320px;
-
-    background-image: url("/images/promo-bg-desktop.png");
-    background-position: right top;
   }
 
   .promo__title {
@@ -3208,16 +3232,36 @@ img {
 
 @media (min-width: 768px) {
   .advantages {
+    position: relative;
+
     margin-bottom: 0;
+  }
+
+  .advantages::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 318px;
+    height: 380px;
+
+    content: "";
+    transform: translate(-395px, 29px);
+
+    background-image: url("/images/advantages-bg-1-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .advantages__container {
     padding: 0 48px 129px;
 
-    background-image: url("/images/advantages-bg-1-tablet.png"),
-      url("/images/advantages-bg-2-tablet.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 7px left, bottom -24px right;
+    background-image: url("/images/advantages-bg-2-tablet.png");
+    background-repeat: no-repeat;
+    background-position: bottom -25px right;
   }
 
   .advantages__title {
@@ -3292,14 +3336,22 @@ img {
 }
 
 @media (min-width: 1366px) {
+  .advantages::before {
+    width: 568px;
+    height: 690px;
+
+    transform: translate(-695px, 5px);
+
+    background-image: url("/images/advantages-bg-1-desktop.png");
+  }
+
   .advantages__container {
     max-width: 1366px;
     margin-top: -40px;
     padding: 40px 74px 255px;
 
-    background-image: url("/images/advantages-bg-1-desktop.png"),
-      url("/images/advantages-bg-2-desktop.png");
-    background-position: top 23px left, bottom -30px right;
+    background-image: url("/images/advantages-bg-2-desktop.png");
+    background-position: bottom -30px right;
   }
 
   .advantages__title {
