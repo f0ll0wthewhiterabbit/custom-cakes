@@ -1,0 +1,174 @@
+.footer {
+  background-color: #898989;
+}
+
+.footer__container {
+  position: relative;
+
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 38px 20px 10px;
+}
+
+.footer__logo {
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  color: #ffffff;
+}
+
+.footer__navigation {
+  margin-bottom: 7px;
+}
+
+.footer__top {
+  margin-bottom: 80px;
+}
+
+.footer__social-links {
+  position: absolute;
+  bottom: 63px;
+  left: 20px;
+
+  display: flex;
+
+  margin: 0;
+
+  align-items: center;
+}
+
+.footer__social-links-item {
+  margin-right: 19px;
+}
+
+.footer__social-links-item:last-child {
+  margin-right: 0;
+}
+
+.footer__copyright {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: "Roboto", "Verdana", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.footer__bottom {
+  padding-top: 7px;
+
+  border-top: 1px solid #959595;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    padding: 30px 20px 13px;
+  }
+
+  .footer__top {
+    display: flex;
+
+    margin-bottom: 36px;
+
+    align-items: baseline;
+  }
+
+  .footer__logo {
+    overflow: hidden;
+
+    width: 92px;
+    margin-bottom: 0;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .footer__navigation {
+    margin-bottom: 0;
+
+    flex-grow: 1;
+  }
+
+  .footer__contact {
+    display: none;
+  }
+
+  .footer__bottom {
+    display: flex;
+
+    padding-top: 13px;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__social-links {
+    position: static;
+  }
+
+  .footer__copyright {
+    margin-right: 42px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer {
+    background-color: #e8e8e8;
+  }
+
+  .footer__container {
+    max-width: 1366px;
+    padding: 30px 74px 16px;
+  }
+
+  .footer__logo {
+    width: 200px;
+    margin-right: 42px;
+
+    color: #2d2829;
+  }
+
+  .footer__navigation {
+    margin-bottom: 10px;
+    padding-right: 100px;
+
+    flex-grow: 1;
+  }
+
+  .footer__contact {
+    display: none;
+  }
+
+  .footer__bottom {
+    display: block;
+
+    padding-top: 16px;
+
+    border-top-color: #d0d0d0;
+  }
+
+  .footer__social-links {
+    position: absolute;
+    top: 16px;
+    right: 73px;
+    left: auto;
+
+    display: flex;
+
+    margin: 0;
+
+    align-items: center;
+  }
+
+  .footer__copyright {
+    margin-right: 0;
+
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

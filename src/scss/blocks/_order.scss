@@ -1,0 +1,104 @@
+.order {
+  margin-bottom: 39px;
+}
+
+.order__container {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.order__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  text-align: center;
+}
+
+.order__description {
+  margin: 0 0 15px;
+
+  text-align: center;
+
+  color: #32313d;
+
+  font-family: "IntroScriptR", cursive;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.order__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.order__item {
+  margin-bottom: 10px;
+}
+
+.order__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .order {
+    margin-bottom: 38px;
+  }
+
+  .order__title {
+    margin-bottom: 7px;
+  }
+
+  .order__description {
+    margin-bottom: 30px;
+
+    font-size: 26px;
+  }
+
+  .order__item {
+    margin-bottom: 20px;
+  }
+
+  .order__item--decorated {
+    background-image: url("/images/decoration-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: top 123px left 3px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .order {
+    margin-bottom: 105px;
+  }
+
+  .order__container {
+    max-width: 1366px;
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+
+  .order__title {
+    margin-bottom: 9px;
+  }
+
+  .order__description {
+    margin-bottom: 46px;
+
+    font-size: 35px;
+  }
+
+  .order__item {
+    margin-bottom: 35px;
+  }
+
+  .order__item--decorated {
+    background-image: url("/images/decoration-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top 200px left 16px;
+  }
+}

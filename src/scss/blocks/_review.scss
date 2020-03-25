@@ -1,0 +1,181 @@
+.review {
+  width: 100%;
+  margin-bottom: 46px;
+
+  text-align: center;
+}
+
+.review__image-wrapper {
+  width: 59px;
+  height: 59px;
+  margin: 0 auto 4px;
+
+  border-radius: 50%;
+}
+
+.review__image {
+  border-radius: 50%;
+}
+
+.review__title {
+  margin: 0;
+
+  color: #2d2829;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.review__info {
+  margin-top: 0;
+  margin-bottom: 7px;
+
+  color: #2d2829;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.review__text {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0 13px;
+
+  color: #2d2829;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.review__more {
+  color: #f50049;
+
+  font-style: italic;
+}
+
+.review__side-control {
+  display: none;
+}
+
+.review__slide-number {
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+
+  color: #f50049;
+}
+
+.review__pagination {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .review {
+    margin-bottom: 100px;
+
+    text-align: left;
+  }
+
+  .review__title {
+    font-size: 16px;
+  }
+
+  .review__info {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+  }
+
+  .review__text {
+    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
+
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .review__image-wrapper {
+    position: absolute;
+    top: 28px;
+    left: 5px;
+
+    width: 108px;
+    height: 108px;
+    margin: 0;
+  }
+
+  .review__slide-number {
+    bottom: -17px;
+  }
+
+  .review__side-control {
+    position: absolute;
+    top: 50%;
+
+    display: inline-block;
+
+    transform: translateY(-50%);
+  }
+
+  .review__side-control--left {
+    left: -87px;
+  }
+
+  .review__side-control--right {
+    right: -86px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .review {
+    margin-bottom: 185px;
+  }
+
+  .review__title {
+    margin-bottom: 4px;
+
+    font-size: 27px;
+  }
+
+  .review__info {
+    margin-bottom: 22px;
+
+    font-size: 20px;
+  }
+
+  .review__text {
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .review__image-wrapper {
+    top: 6px;
+    left: 20px;
+
+    width: 210px;
+    height: 210px;
+  }
+
+  .review__slide-number {
+    right: -44px;
+    bottom: -29px;
+  }
+
+  .review__side-control--left {
+    left: -104px;
+  }
+
+  .review__side-control--right {
+    right: -94px;
+  }
+}

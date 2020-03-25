@@ -1,0 +1,250 @@
+.product-card {
+  position: relative;
+
+  display: block;
+
+  padding: 10px 12px;
+
+  text-align: left;
+  text-decoration: none;
+}
+
+.product-card:hover {
+  cursor: pointer;
+}
+
+.product-card::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  background-color: #ffffff;
+}
+
+.product-card::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: "";
+
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.product-card:hover::after,
+.product-card:focus::after,
+.product-card:active::after {
+  opacity: 0.4;
+}
+
+.product-card__title {
+  margin-top: 0;
+  margin-bottom: 2px;
+
+  color: #2d2829;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.product-card__amount {
+  margin: 0;
+
+  color: rgba(45, 40, 41, 0.7);
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.product-card__invitation {
+  display: none;
+}
+
+.product-card--classic::after {
+  background-image: url("/images/cake-classic-mobile.jpg");
+}
+
+.product-card--mousse::after {
+  background-image: url("/images/cake-mousse-mobile.jpg");
+}
+
+.product-card--wedding::after {
+  background-image: url("/images/cake-wedding-mobile.jpg");
+}
+
+.product-card--men::after {
+  background-image: url("/images/cake-men-mobile.jpg");
+}
+
+.product-card--women::after {
+  background-image: url("/images/cake-women-mobile.jpg");
+}
+
+.product-card--children::after {
+  background-image: url("/images/cake-children-mobile.jpg");
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    padding: 20px 25px;
+
+    transition: all 0.3s ease;
+
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .product-card:hover,
+  .product-card:focus,
+  .product-card:active {
+    box-shadow: 0 10px 13px 1px rgba(163, 6, 60, 0.12);
+  }
+
+  .product-card--classic {
+    background-image: url("/images/cake-classic-tablet.jpg");
+  }
+
+  .product-card--mousse {
+    background-image: url("/images/cake-mousse-tablet.jpg");
+  }
+
+  .product-card--wedding {
+    background-image: url("/images/cake-wedding-tablet.jpg");
+  }
+
+  .product-card--men {
+    background-image: url("/images/cake-men-tablet.jpg");
+  }
+
+  .product-card--women {
+    background-image: url("/images/cake-women-tablet.jpg");
+  }
+
+  .product-card--children {
+    background-color: #f4f3f5;
+    background-image: url("/images/cake-children-tablet.jpg");
+  }
+
+  .product-card::before,
+  .product-card::after {
+    display: none;
+  }
+
+  .product-card__invitation {
+    position: absolute;
+    right: 65px;
+    bottom: 30px;
+
+    display: flex;
+
+    align-items: center;
+  }
+
+  .product-card__invitation::before {
+    display: none;
+  }
+
+  .product-card__invitation-text {
+    display: none;
+
+    margin-right: 15px;
+
+    color: #2d2829;
+
+    font-family: "Ubuntu", "Verdana", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2;
+  }
+
+  .product-card:hover .product-card__invitation-text,
+  .product-card:focus .product-card__invitation-text,
+  .product-card:active .product-card__invitation-text {
+    display: inline;
+  }
+}
+
+@media (min-width: 1366px) {
+  .product-card {
+    padding: 30px 45px;
+  }
+
+  .product-card__title {
+    margin-bottom: 2px;
+
+    font-size: 24px;
+  }
+
+  .product-card__amount {
+    font-size: 20px;
+  }
+
+  .product-card--classic {
+    background-image: url("/images/cake-classic-desktop.jpg");
+  }
+
+  .product-card--mousse {
+    background-image: url("/images/cake-mousse-desktop.jpg");
+  }
+
+  .product-card--wedding {
+    background-image: url("/images/cake-wedding-desktop.jpg");
+  }
+
+  .product-card--men {
+    background-image: url("/images/cake-men-desktop.jpg");
+  }
+
+  .product-card--women {
+    background-image: url("/images/cake-women-desktop.jpg");
+  }
+
+  .product-card--children {
+    background-image: url("/images/cake-children-desktop.jpg");
+  }
+
+  .product-card__invitation {
+    right: 74px;
+    bottom: 33px;
+  }
+
+  .product-card__invitation-text {
+    margin-right: 25px;
+
+    font-size: 20px;
+  }
+
+  .product-card__invitation::before {
+    display: inline;
+
+    color: #a8a8a8;
+
+    font-size: 11px;
+
+    order: 1;
+  }
+
+  .product-card:hover .product-card__invitation::before,
+  .product-card:focus .product-card__invitation::before,
+  .product-card:active .product-card__invitation::before {
+    color: #f95f8d;
+  }
+}

@@ -1,0 +1,107 @@
+.social-links {
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-links__link {
+  display: flex;
+
+  width: 36px;
+  height: 36px;
+
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  font-size: 0;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links__link:hover,
+.social-links__link:focus,
+.social-links__link:active {
+  box-shadow: 0 2px 7px 1px rgba(255, 0, 67, 0.2);
+}
+
+.social-links__link::before {
+  transition: all 0.3s ease;
+
+  color: #f50049;
+
+  font-weight: bold;
+}
+
+.social-links__link--instagram::before {
+  font-size: 18px;
+}
+
+.social-links__link--vk::before {
+  font-size: 12px;
+}
+
+.social-links__link--twitter::before {
+  font-size: 16px;
+}
+
+.social-links__item--large .social-links__link {
+  width: 64px;
+  height: 64px;
+}
+
+.social-links__item--large .social-links__link--instagram::before {
+  font-size: 31px;
+}
+
+.social-links__item--large .social-links__link--vk::before {
+  font-size: 25px;
+}
+
+.social-links__item--medium .social-links__link--instagram::before {
+  font-size: 22px;
+}
+
+.social-links__item--medium .social-links__link--vk::before {
+  font-size: 18px;
+}
+
+.social-links__item--conservative .social-links__link {
+  width: auto;
+  height: auto;
+
+  background-color: transparent;
+}
+
+.social-links__item--conservative .social-links__link::before {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-weight: normal;
+}
+
+.social-links__item--conservative .social-links__link:hover,
+.social-links__item--conservative .social-links__link:focus,
+.social-links__item--conservative .social-links__link:active {
+  box-shadow: none;
+}
+
+.social-links__item--conservative .social-links__link:hover::before,
+.social-links__item--conservative .social-links__link:focus::before,
+.social-links__item--conservative .social-links__link:active::before {
+  color: #ffffff;
+}
+
+@media (min-width: 1366px) {
+  .social-links__item--conservative .social-links__link::before {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .social-links__item--conservative .social-links__link:hover::before,
+  .social-links__item--conservative .social-links__link:focus::before,
+  .social-links__item--conservative .social-links__link:active::before {
+    color: #000000;
+  }
+}

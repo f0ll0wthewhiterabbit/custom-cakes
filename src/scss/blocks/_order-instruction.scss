@@ -1,0 +1,191 @@
+.order-instruction {
+  background-color: #e3353d;
+}
+
+.order-instruction__container {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 20px 148px;
+
+  background-image: url("/images/order-instruction-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.order-instruction__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.order-instruction__list {
+  margin: 0;
+  padding: 0 15px 0 47px;
+
+  list-style: none;
+
+  counter-reset: list-counter;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.order-instruction__item {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  counter-increment: list-counter;
+}
+
+.order-instruction__item:last-child {
+  margin-bottom: 0;
+}
+
+.order-instruction__item::before {
+  position: absolute;
+  top: -12px;
+  left: -30px;
+
+  content: counter(list-counter);
+
+  font-family: "PlayfairDisplay", serif;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+}
+
+.order-instruction__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.order-instruction__description {
+  margin: 0;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .order-instruction {
+    position: relative;
+  }
+
+  .order-instruction::before {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 508px;
+    height: 329px;
+
+    content: "";
+    transform: translateX(-563px);
+
+    background-image: url("/images/order-instruction-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .order-instruction__container {
+    padding: 45px 48px 53px 327px;
+
+    background-image: none;
+  }
+
+  .order-instruction__title {
+    margin-bottom: 34px;
+
+    text-align: left;
+  }
+
+  .order-instruction__subtitle {
+    margin-bottom: 3px;
+  }
+
+  .order-instruction__list {
+    padding-right: 20px;
+    padding-left: 42px;
+  }
+
+  .order-instruction__item {
+    margin-bottom: 32px;
+  }
+
+  .order-instruction__item::before {
+    top: -10px;
+    left: -41px;
+
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .order-instruction {
+    position: relative;
+  }
+
+  .order-instruction::before {
+    display: none;
+  }
+
+  .order-instruction__container {
+    min-width: 1366px;
+    padding: 116px 82px 185px 830px;
+
+    background-image: url("/images/order-instruction-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+
+  .order-instruction__title {
+    margin-bottom: 39px;
+  }
+
+  .order-instruction__list {
+    padding-right: 0;
+    padding-left: 38px;
+  }
+
+  .order-instruction__item {
+    margin-bottom: 31px;
+  }
+
+  .order-instruction__item::before {
+    top: -20px;
+    left: -58px;
+
+    width: 40px;
+
+    text-align: right;
+
+    font-size: 64px;
+  }
+
+  .order-instruction__subtitle {
+    margin-bottom: 5px;
+
+    font-size: 21px;
+  }
+
+  .order-instruction__description {
+    font-size: 20px;
+  }
+}

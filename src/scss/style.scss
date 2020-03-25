@@ -1,2 +1,34 @@
 @import "normalize";
-@import "styles";
+
+@import "fonts";
+@import "common";
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/main-navigation";
+@import "blocks/contact";
+@import "blocks/main";
+@import "blocks/promo";
+@import "blocks/features";
+@import "blocks/button";
+@import "blocks/section-title";
+@import "blocks/catalog";
+@import "blocks/product-card";
+@import "blocks/order";
+@import "blocks/step";
+@import "blocks/ingredient";
+@import "blocks/slider";
+@import "blocks/size-selection";
+@import "blocks/decoration";
+@import "blocks/result";
+@import "blocks/reviews";
+@import "blocks/review";
+@import "blocks/about-us";
+@import "blocks/social-links";
+@import "blocks/advantages";
+@import "blocks/order-instruction";
+@import "blocks/contacts";
+@import "blocks/contact-form";
+@import "blocks/footer";
+@import "blocks/additional-navigation";

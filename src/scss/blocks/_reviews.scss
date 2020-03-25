@@ -1,0 +1,65 @@
+.reviews__container {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  text-align: center;
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    margin-top: -40px;
+    padding-top: 40px;
+
+    background-image: url("/images/reviews-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: top -10px center;
+  }
+
+  .reviews__title {
+    margin-bottom: 24px;
+  }
+
+  .reviews__slider {
+    width: 414px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 137px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .reviews {
+    margin-top: -105px;
+    padding-top: 105px;
+
+    background-image: url("/images/reviews-bg-desktop.png");
+    background-position: top -1px center;
+  }
+
+  .reviews__container {
+    max-width: 1366px;
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+
+  .reviews__title {
+    margin-bottom: 50px;
+  }
+
+  .reviews__slider {
+    width: 674px;
+    padding-left: 281px;
+  }
+}

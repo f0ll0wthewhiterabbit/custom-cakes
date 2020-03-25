@@ -1,0 +1,98 @@
+.contact-form {
+  text-align: center;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 15px 10px;
+
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.contact-form__input {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-form__textarea {
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.contact-form__input--question {
+  display: none;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: #cccccc;
+}
+
+.contact-form__submit {
+  width: 180px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  text-transform: capitalize;
+
+  font-size: 19px;
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    text-align: left;
+  }
+
+  .contact-form__textarea {
+    margin-bottom: 22px;
+  }
+
+  .contact-form__submit {
+    width: 160px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .contact-form__input,
+  .contact-form__textarea {
+    padding: 5px 0;
+
+    border-bottom: 1px solid #c9bcbb;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .contact-form__input {
+    height: 25px;
+    margin-bottom: 35px;
+  }
+
+  .contact-form__input--question {
+    display: block;
+
+    margin-bottom: 80px;
+  }
+
+  .contact-form__textarea {
+    display: none;
+  }
+
+  .contact-form__submit {
+    width: 180px;
+
+    font-size: 19px;
+  }
+}

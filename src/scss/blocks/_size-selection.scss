@@ -1,0 +1,241 @@
+.size-selection {
+  width: 100%;
+}
+
+.size-selection__slider {
+  position: relative;
+
+  text-align: center;
+}
+
+.size-selection__list {
+  margin: 0;
+  padding: 12px 0 0;
+
+  list-style: none;
+}
+
+.size-selection__item {
+  display: none;
+}
+
+.size-selection__item:first-child {
+  display: block;
+}
+
+.size-selection__select {
+  margin-bottom: 54px;
+  padding: 0;
+
+  color: #2f2f2f;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.size-selection__select--small {
+  width: 141px;
+  height: 141px;
+
+  background-image: url("/images/circle-small.png");
+  background-size: 111px 111px;
+}
+
+.size-selection__select--medium {
+  width: 159px;
+  height: 159px;
+
+  background-image: url("/images/circle-medium.png");
+  background-size: 80%;
+}
+
+.size-selection__select--large {
+  width: 179px;
+  height: 179px;
+
+  background-image: url("/images/circle-large.png");
+  background-size: 80%;
+}
+
+.size-selection__select--extra-large {
+  width: 207px;
+  height: 207px;
+
+  background-image: url("/images/circle-extra-large.png");
+  background-size: 80%;
+}
+
+.size-selection__description {
+  margin: 0;
+
+  color: #2f2f2f;
+
+  font-family: "Ubuntu", "Verdana", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.size-selection__description:last-of-type {
+  margin-bottom: 56px;
+}
+
+.size-selection__pagination {
+  position: absolute;
+  top: 185px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.size-selection__button {
+  width: 180px;
+
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .size-selection__button {
+    display: none;
+  }
+
+  .size-selection__list {
+    display: flex;
+
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 28px;
+
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .size-selection__item {
+    display: block;
+
+    margin-right: 14px;
+  }
+
+  .size-selection__item:last-child {
+    margin-right: 0;
+  }
+
+  .size-selection__select {
+    margin-bottom: 8px;
+
+    transition: all 0.3s ease;
+
+    font-size: 12px;
+  }
+
+  .size-selection__select:hover,
+  .size-selection__select:focus,
+  .size-selection__select:active {
+    cursor: pointer;
+
+    box-shadow: 0 6px 16px 1px rgba(103, 12, 40, 0.14);
+  }
+
+  .size-selection__select--small {
+    width: 108px;
+    height: 108px;
+
+    background-size: 78px 78px;
+  }
+
+  .size-selection__select--medium {
+    width: 138px;
+    height: 138px;
+
+    background-size: 108px 108px;
+  }
+
+  .size-selection__select--large {
+    width: 152px;
+    height: 152px;
+
+    background-size: 122px 122px;
+  }
+
+  .size-selection__select--extra-large {
+    width: 172px;
+    height: 172px;
+
+    background-size: 142px 142px;
+  }
+
+  .size-selection__description {
+    margin-bottom: 6px;
+    padding-left: 14px;
+
+    text-align: left;
+
+    font-size: 12px;
+  }
+
+  .size-selection__description:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1366px) {
+  .size-selection__list {
+    padding-top: 55px;
+    padding-bottom: 42px;
+  }
+
+  .size-selection__item {
+    margin-right: 34px;
+  }
+
+  .size-selection__select {
+    margin-bottom: 13px;
+
+    font-size: 17px;
+  }
+
+  .size-selection__select--small {
+    width: 142px;
+    height: 142px;
+
+    background-size: 110px 110px;
+  }
+
+  .size-selection__select--medium {
+    width: 186px;
+    height: 186px;
+
+    background-size: 154px 154px;
+  }
+
+  .size-selection__select--large {
+    width: 206px;
+    height: 206px;
+
+    background-size: 174px 174px;
+  }
+
+  .size-selection__select--extra-large {
+    width: 234px;
+    height: 234px;
+
+    background-size: 202px 202px;
+  }
+
+  .size-selection__description {
+    font-size: 18px;
+  }
+
+  .size-selection__description:first-of-type {
+    margin-bottom: 13px;
+  }
+}

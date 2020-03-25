@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/ubuntu-regular.woff2") format("woff2"),
+    url("../fonts/ubuntu-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-style: normal;
+
+  src: url("../fonts/ubuntu-bold.woff2") format("woff2"),
+    url("../fonts/ubuntu-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IntroScriptR";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/introscriptr-h2base.woff2") format("woff2"),
+    url("../fonts/introscriptr-h2base.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-weight: bold;
+  font-style: normal;
+
+  src: url("../fonts/playfairdisplay-bold.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  font-weight: bold;
+  font-style: italic;
+
+  src: url("../fonts/playfairdisplay-bolditalic.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-bolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("../fonts/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular.woff") format("woff");
+}
+
+/* icomoon */
+@font-face {
+  font-family: "icomoon";
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: block;
+  src: url("../fonts/icomoon.eot?dmbzvv");
+  src: url("../fonts/icomoon.eot?dmbzvv#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?dmbzvv") format("truetype"),
+    url("../fonts/icomoon.woff?dmbzvv") format("woff"),
+    url("../fonts/icomoon.svg?dmbzvv#icomoon") format("svg");
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  text-transform: none;
+
+  font-family: "icomoon" !important;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+
+.icon-chevron-left::before {
+  content: "\e906";
+}
+.icon-chevron-right::before {
+  content: "\e907";
+}
+.icon-delivery::before {
+  content: "\e900";
+}
+.icon-ingredients::before {
+  content: "\e901";
+}
+.icon-instagram::before {
+  content: "\e902";
+}
+.icon-right-arrow::before {
+  content: "\e903";
+}
+.icon-twitter::before {
+  content: "\e904";
+}
+.icon-vk::before {
+  content: "\e905";
+}

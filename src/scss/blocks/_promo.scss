@@ -1,0 +1,157 @@
+.promo {
+  margin-bottom: 26px;
+}
+
+.promo__container {
+  padding: 128px 20px 20px;
+
+  text-align: center;
+
+  background-image: url("/images/promo-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.promo__title {
+  margin: 0 0 18px;
+
+  letter-spacing: 3px;
+
+  font-family: "PlayfairDisplay", serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 0.9;
+}
+
+.promo__subtitle {
+  margin: 0 0 21px;
+
+  color: #32313d;
+
+  font-family: "IntroScriptR", cursive;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.promo__features {
+  max-width: 280px;
+  margin: 0 auto 42px;
+}
+
+.promo__link {
+  width: 226px;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    position: relative;
+
+    margin-bottom: 46px;
+  }
+
+  .promo::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+
+    display: block;
+
+    width: 632px;
+    height: 571px;
+
+    content: "";
+    transform: translate(-112px, 13px);
+
+    background-image: url("/images/promo-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 104px 47px;
+
+    text-align: left;
+
+    background: none;
+  }
+
+  .promo__title {
+    max-width: 320px;
+    margin-bottom: 22px;
+
+    letter-spacing: 4px;
+
+    font-size: 60px;
+  }
+
+  .promo__subtitle {
+    max-width: 320px;
+    margin-bottom: 52px;
+
+    font-size: 36px;
+  }
+
+  .promo__features {
+    max-width: none;
+    margin: 0;
+
+    order: 1;
+  }
+
+  .promo__link {
+    margin-bottom: 164px;
+  }
+
+  .promo__features {
+    display: flex;
+  }
+}
+
+@media (min-width: 1366px) {
+  .promo {
+    margin-bottom: 3px;
+  }
+
+  .promo::before {
+    width: 1179px;
+    height: 941px;
+
+    transform: translate(-325px, 0px);
+
+    background-image: url("/images/promo-bg-desktop.png");
+  }
+
+  .promo__container {
+    position: relative;
+
+    max-width: 1366px;
+    margin-bottom: -70px;
+    padding: 130px 74px 320px;
+  }
+
+  .promo__title {
+    max-width: 485px;
+
+    font-size: 78px;
+  }
+
+  .promo__subtitle {
+    max-width: 485px;
+    margin-bottom: 56px;
+
+    font-size: 41px;
+  }
+
+  .promo__link {
+    margin-bottom: 144px;
+  }
+}
