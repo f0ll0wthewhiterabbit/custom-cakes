@@ -111,7 +111,7 @@
     content: "";
     transform: translateX(-58px);
 
-    background-image: url("/images/contacts-bg-tablet.jpg");
+    background-image: url("../images/contacts-bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -165,7 +165,7 @@
 
     transform: translateX(-178px);
 
-    background-image: url("/images/contacts-bg-desktop.jpg");
+    background-image: url("../images/contacts-bg-desktop.jpg");
   }
 
   .contacts__container {

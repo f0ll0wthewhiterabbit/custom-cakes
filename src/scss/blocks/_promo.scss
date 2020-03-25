@@ -7,7 +7,7 @@
 
   text-align: center;
 
-  background-image: url("/images/promo-bg-mobile.png");
+  background-image: url("../images/promo-bg-mobile.png");
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -65,7 +65,7 @@
     content: "";
     transform: translate(-112px, 13px);
 
-    background-image: url("/images/promo-bg-tablet.png");
+    background-image: url("../images/promo-bg-tablet.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -127,7 +127,7 @@
 
     transform: translate(-325px, 0px);
 
-    background-image: url("/images/promo-bg-desktop.png");
+    background-image: url("../images/promo-bg-desktop.png");
   }
 
   .promo__container {

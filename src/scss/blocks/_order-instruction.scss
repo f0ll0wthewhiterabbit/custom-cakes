@@ -8,7 +8,7 @@
   margin-left: auto;
   padding: 30px 20px 148px;
 
-  background-image: url("/images/order-instruction-bg-mobile.jpg");
+  background-image: url("../images/order-instruction-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -99,7 +99,7 @@
     content: "";
     transform: translateX(-563px);
 
-    background-image: url("/images/order-instruction-bg-tablet.jpg");
+    background-image: url("../images/order-instruction-bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -150,7 +150,7 @@
     min-width: 1366px;
     padding: 116px 82px 185px 830px;
 
-    background-image: url("/images/order-instruction-bg-desktop.jpg");
+    background-image: url("../images/order-instruction-bg-desktop.jpg");
     background-repeat: no-repeat;
     background-position: left bottom;
   }

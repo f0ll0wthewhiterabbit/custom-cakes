@@ -77,27 +77,27 @@
 }
 
 .product-card--classic::after {
-  background-image: url("/images/cake-classic-mobile.jpg");
+  background-image: url("../images/cake-classic-mobile.jpg");
 }
 
 .product-card--mousse::after {
-  background-image: url("/images/cake-mousse-mobile.jpg");
+  background-image: url("../images/cake-mousse-mobile.jpg");
 }
 
 .product-card--wedding::after {
-  background-image: url("/images/cake-wedding-mobile.jpg");
+  background-image: url("../images/cake-wedding-mobile.jpg");
 }
 
 .product-card--men::after {
-  background-image: url("/images/cake-men-mobile.jpg");
+  background-image: url("../images/cake-men-mobile.jpg");
 }
 
 .product-card--women::after {
-  background-image: url("/images/cake-women-mobile.jpg");
+  background-image: url("../images/cake-women-mobile.jpg");
 }
 
 .product-card--children::after {
-  background-image: url("/images/cake-children-mobile.jpg");
+  background-image: url("../images/cake-children-mobile.jpg");
 }
 
 @media (min-width: 768px) {
@@ -118,28 +118,28 @@
   }
 
   .product-card--classic {
-    background-image: url("/images/cake-classic-tablet.jpg");
+    background-image: url("../images/cake-classic-tablet.jpg");
   }
 
   .product-card--mousse {
-    background-image: url("/images/cake-mousse-tablet.jpg");
+    background-image: url("../images/cake-mousse-tablet.jpg");
   }
 
   .product-card--wedding {
-    background-image: url("/images/cake-wedding-tablet.jpg");
+    background-image: url("../images/cake-wedding-tablet.jpg");
   }
 
   .product-card--men {
-    background-image: url("/images/cake-men-tablet.jpg");
+    background-image: url("../images/cake-men-tablet.jpg");
   }
 
   .product-card--women {
-    background-image: url("/images/cake-women-tablet.jpg");
+    background-image: url("../images/cake-women-tablet.jpg");
   }
 
   .product-card--children {
     background-color: #f4f3f5;
-    background-image: url("/images/cake-children-tablet.jpg");
+    background-image: url("../images/cake-children-tablet.jpg");
   }
 
   .product-card::before,
@@ -198,27 +198,27 @@
   }
 
   .product-card--classic {
-    background-image: url("/images/cake-classic-desktop.jpg");
+    background-image: url("../images/cake-classic-desktop.jpg");
   }
 
   .product-card--mousse {
-    background-image: url("/images/cake-mousse-desktop.jpg");
+    background-image: url("../images/cake-mousse-desktop.jpg");
   }
 
   .product-card--wedding {
-    background-image: url("/images/cake-wedding-desktop.jpg");
+    background-image: url("../images/cake-wedding-desktop.jpg");
   }
 
   .product-card--men {
-    background-image: url("/images/cake-men-desktop.jpg");
+    background-image: url("../images/cake-men-desktop.jpg");
   }
 
   .product-card--women {
-    background-image: url("/images/cake-women-desktop.jpg");
+    background-image: url("../images/cake-women-desktop.jpg");
   }
 
   .product-card--children {
-    background-image: url("/images/cake-children-desktop.jpg");
+    background-image: url("../images/cake-children-desktop.jpg");
   }
 
   .product-card__invitation {

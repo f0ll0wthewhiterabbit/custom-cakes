@@ -8,7 +8,7 @@
   margin-left: auto;
   padding: 20px 20px 172px;
 
-  background-image: url("/images/advantages-bg-mobile.png");
+  background-image: url("../images/advantages-bg-mobile.png");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -90,7 +90,7 @@
 
   content: "";
 
-  background-image: url("/images/icon-cake.png");
+  background-image: url("../images/icon-cake.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -152,7 +152,7 @@
     content: "";
     transform: translate(-395px, 29px);
 
-    background-image: url("/images/advantages-bg-1-tablet.png");
+    background-image: url("../images/advantages-bg-1-tablet.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -160,7 +160,7 @@
   .advantages__container {
     padding: 0 48px 129px;
 
-    background-image: url("/images/advantages-bg-2-tablet.png");
+    background-image: url("../images/advantages-bg-2-tablet.png");
     background-repeat: no-repeat;
     background-position: bottom -25px right;
   }
@@ -243,7 +243,7 @@
 
     transform: translate(-695px, 5px);
 
-    background-image: url("/images/advantages-bg-1-desktop.png");
+    background-image: url("../images/advantages-bg-1-desktop.png");
   }
 
   .advantages__container {
@@ -251,7 +251,7 @@
     margin-top: -40px;
     padding: 40px 74px 255px;
 
-    background-image: url("/images/advantages-bg-2-desktop.png");
+    background-image: url("../images/advantages-bg-2-desktop.png");
     background-position: bottom -30px right;
   }
 
