@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Cakes</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <h2 class="header__logo logo">Cakes</h2>
+        <nav
+          class="main-navigation main-navigation--closed main-navigation--no-js"
+        >
+          <button class="main-navigation__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a href="#catalog" class="main-navigation__link">Наши торты</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#order" class="main-navigation__link"
+                >Индивидуальный заказ</a
+              >
+            </li>
+            <li class="main-navigation__item">
+              <a href="#reviews" class="main-navigation__link">Отзывы</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#about-us" class="main-navigation__link">О нас</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#order-instruction" class="main-navigation__link"
+                >Как заказать</a
+              >
+            </li>
+            <li class="main-navigation__item">
+              <a href="#contacts" class="main-navigation__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact contact">
+          <a href="tel:+79068999296" class="contact__phone"
+            >+7&nbsp;906&nbsp;899&nbsp;92&nbsp;96</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <div class="promo__container">
+          <h1 class="promo__title">Торты на&nbsp;заказ</h1>
+          <h2 class="promo__subtitle">Ручная работа</h2>
+          <ul class="promo__features features">
+            <li class="features__item icon-ingredients">
+              <p class="features__description">Натуральные ингредиенты</p>
+            </li>
+            <li class="features__item icon-delivery">
+              <p class="features__description">
+                Доставка бесплатно при&nbsp;заказе от 2000 рублей<sup>*</sup>
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="promo__link button">Выбрать торт</a>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="catalog__container">
+          <h2 class="catalog__title section-title">Наши торты</h2>
+          <div class="catalog__wrapper">
+            <a
+              href="#"
+              class="catalog__item catalog__item--large product-card product-card--classic"
+            >
+              <h3 class="product-card__title">Классические</h3>
+              <p class="product-card__amount">24 вида</p>
+              <div class="product-card__invitation icon-right-arrow">
+                <span class="product-card__invitation-text">Смотреть</span>
+              </div>
+            </a>
+            <div class="catalog__column-wrapper">
+              <a
+                href="#"
+                class="catalog__item product-card product-card--mousse"
+              >
+                <h3 class="product-card__title">Муссовые</h3>
+                <p class="product-card__amount">12 видов</p>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="catalog__item product-card product-card--wedding"
+              >
+                <h3 class="product-card__title">Свадебные</h3>
+                <p class="product-card__amount">20 видов</p>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
+              </a>
+            </div>
+            <div class="catalog__column-wrapper">
+              <a href="#" class="catalog__item product-card product-card--men">
+                <h3 class="product-card__title">Мужчинам</h3>
+                <p class="product-card__amount">12 видов</p>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="catalog__item product-card product-card--women"
+              >
+                <h3 class="product-card__title">Женщинам</h3>
+                <p class="product-card__amount">16 видов</p>
+                <div class="product-card__invitation icon-right-arrow">
+                  <span class="product-card__invitation-text">Смотреть</span>
+                </div>
+              </a>
+            </div>
+            <a
+              href="#"
+              class="catalog__item catalog__item--large product-card product-card--children"
+            >
+              <h3 class="product-card__title">Детские</h3>
+              <p class="product-card__amount">18 видов</p>
+              <div class="product-card__invitation icon-right-arrow">
+                <span class="product-card__invitation-text">Смотреть</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="order" id="order">
+        <div class="order__container">
+          <h2 class="order__title section-title">Индивидуальный заказ</h2>
+          <p class="order__description">Соберите торт в 3 шага</p>
+          <ol class="order__list">
+            <li class="order__item step">
+              <h3 class="step__title">
+                <span class="step__number">01 </span>Выберите начинку
+              </h3>
+              <section class="ingredient">
+                <div class="ingredient__slider slider">
+                  <div class="ingredient__image-wrapper">
+                    <picture>
+                      <source
+                        media="(min-width: 1366px)"
+                        srcset="images/filling-photo-desktop.jpg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="images/filling-photo-tablet.jpg"
+                      />
+                      <img
+                        src="images/filling-photo-mobile.jpg"
+                        alt="Шоколадный ганаш"
+                        class="ingredient__image"
+                      />
+                    </picture>
+                    <span class="slider__slide-number ingredient__slide-number"
+                      >1/12</span
+                    >
+                  </div>
+                  <ul class="ingredient__pagination slider__pagination">
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--active"
+                      ></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--more"
+                      ></a>
+                    </li>
+                  </ul>
+                  <h5 class="ingredient__title">Шоколадный ганаш</h5>
+                  <p class="ingredient__description">
+                    Ароматный шоколадный бисквит, густой шоколадный крем – самый
+                    шоколадный из всех возможных десертов!
+                  </p>
+                  <p class="ingredient__price">1000&nbsp;руб/кг</p>
+                  <button class="ingredient__button button" type="button">
+                    Выбрать
+                  </button>
+
+                  <button
+                    class="ingredient__side-control ingredient__side-control--left slider__side-control icon-chevron-left"
+                    type="button"
+                  >
+                    Назад
+                  </button>
+                  <button
+                    class="ingredient__side-control ingredient__side-control--right slider__side-control icon-chevron-right"
+                    type="button"
+                  >
+                    Вперёд
+                  </button>
+                </div>
+              </section>
+            </li>
+
+            <li class="order__item step">
+              <h3 class="step__title">
+                <span class="step__number">02 </span>Размер
+              </h3>
+              <section class="size-selection">
+                <div class="size-selection__slider slider">
+                  <ul class="size-selection__list">
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--small"
+                        type="button"
+                      >
+                        1кг
+                      </button>
+                      <p class="size-selection__description">17-18&nbsp;см</p>
+                      <p class="size-selection__description">
+                        (1&nbsp;кг&nbsp;–&nbsp;6&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--medium"
+                        type="button"
+                      >
+                        2кг
+                      </button>
+                      <p class="size-selection__description">23-24&nbsp;см</p>
+                      <p class="size-selection__description">
+                        (10–12&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--large"
+                        type="button"
+                      >
+                        5кг
+                      </button>
+                      <p class="size-selection__description">
+                        Два яруса 25 и 20&nbsp;см
+                      </p>
+                      <p class="size-selection__description">
+                        (15–20&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="size-selection__item">
+                      <button
+                        class="size-selection__select size-selection__select--extra-large"
+                        type="button"
+                      >
+                        8кг
+                      </button>
+                      <p class="size-selection__description">
+                        Три яруса 30,25 и 18&nbsp;см
+                      </p>
+                      <p class="size-selection__description">
+                        (25–30&nbsp;персон)
+                      </p>
+                      <button
+                        class="size-selection__button button"
+                        type="button"
+                      >
+                        Выбрать
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="size-selection__pagination slider__pagination">
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--active"
+                      ></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </li>
+
+            <li class="order__item order__item--decorated step">
+              <h3 class="step__title">
+                <span class="step__number">03 </span>Оформление
+              </h3>
+              <section class="decoration">
+                <div class="decoration__slider slider">
+                  <ul class="decoration__list">
+                    <li class="decoration__item">
+                      <button class="decoration__select" type="button">
+                        <div class="decoration__image-wrapper">
+                          <picture>
+                            <source
+                              media="(min-width: 1366px)"
+                              srcset="images/product-1-desktop.jpg"
+                            />
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="images/product-1-tablet.jpg"
+                            />
+                            <img
+                              src="images/product-1-tablet.jpg"
+                              alt="Ягодное ассорти"
+                              class="decoration__image"
+                            />
+                          </picture>
+                        </div>
+                        <div class="decoration__info">
+                          <h5 class="decoration__title">Ягодное ассорти</h5>
+                          <p class="decoration__price">700&nbsp;руб/кг</p>
+                        </div>
+                      </button>
+                      <button class="decoration__button button" type="button">
+                        Выбрать
+                      </button>
+                    </li>
+                    <li class="decoration__item">
+                      <button class="decoration__select" type="button">
+                        <div class="decoration__image-wrapper">
+                          <picture>
+                            <source
+                              media="(min-width: 1366px)"
+                              srcset="images/product-2-desktop.jpg"
+                            />
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="images/product-2-tablet.jpg"
+                            />
+                            <img
+                              src="images/product-2-mobile.jpg"
+                              alt="Маршмэллоу"
+                              class="decoration__image"
+                            />
+                          </picture>
+                          <span
+                            class="slider__slide-number decoration__slide-number"
+                            >2/35</span
+                          >
+                        </div>
+                        <div class="decoration__info">
+                          <h5 class="decoration__title">Маршмэллоу</h5>
+                          <p class="decoration__price">600&nbsp;руб/кг</p>
+                        </div>
+                      </button>
+                      <button class="decoration__button button" type="button">
+                        Выбрать
+                      </button>
+                    </li>
+                  </ul>
+                  <ul class="decoration__pagination slider__pagination">
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--active"
+                      ></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a href="#" class="slider__pagination__link"></a>
+                    </li>
+                    <li class="slider__pagination-item">
+                      <a
+                        href="#"
+                        class="slider__pagination__link slider__pagination__link--more"
+                      ></a>
+                    </li>
+                  </ul>
+                  <button
+                    class="decoration__side-control decoration__side-control--left slider__side-control icon-chevron-left"
+                    type="button"
+                  >
+                    Назад
+                  </button>
+                  <button
+                    class="decoration__side-control decoration__side-control--right slider__side-control icon-chevron-right"
+                    type="button"
+                  >
+                    Вперёд
+                  </button>
+                </div>
+              </section>
+
+              <section class="result">
+                <h4 class="result__title">Ваш выбор</h4>
+                <form class="result__form">
+                  <fieldset class="result__field">
+                    <label for="filling" class="result__label">Начинка</label>
+                    <input
+                      type="text"
+                      class="result__input"
+                      id="filling"
+                      name="filling"
+                      value="Шоколадный ганаш"
+                      readonly
+                      tabindex="0"
+                    />
+                  </fieldset>
+                  <fieldset class="result__field result__field--small">
+                    <label for="size" class="result__label">Размер</label>
+                    <input
+                      type="text"
+                      class="result__input"
+                      id="size"
+                      name="size"
+                      value="2 кг"
+                      readonly
+                      tabindex="0"
+                    />
+                  </fieldset>
+                  <fieldset class="result__field">
+                    <label for="decor" class="result__label">Оформление</label>
+                    <input
+                      type="text"
+                      class="result__input"
+                      id="decor"
+                      name="decor"
+                      value="Маршмэллоу"
+                      readonly
+                      tabindex="0"
+                    />
+                  </fieldset>
+                  <button class="result__submit button" type="submit">
+                    Заказать торт
+                  </button>
+                </form>
+              </section>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title section-title">Отзывы</h2>
+          <section class="review">
+            <div class="reviews__slider slider">
+              <div class="review__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1366px)"
+                    srcset="images/client-photo-desktop.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/client-photo-tablet.jpg"
+                  />
+                  <img
+                    src="images/client-photo-mobile.jpg"
+                    alt="Мария"
+                    class="review__image"
+                  />
+                </picture>
+              </div>
+              <h3 class="review__title">Мария</h3>
+              <p class="review__info">юрист, 33&nbsp;года</p>
+              <p class="review__text">
+                Заказывала торт брауни на юбилей мужа. Гости были в восторге!
+                Отдельное спасибо за своевременную доставку! Теперь будем
+                заказывать торты только у вас для наших семейных праздников:)
+                <a href="#" class="review__more">Развернуть</a>
+              </p>
+              <button
+                class="review__side-control review__side-control--left slider__side-control icon-chevron-left"
+                type="button"
+              >
+                Назад
+              </button>
+              <button
+                class="review__side-control review__side-control--right slider__side-control icon-chevron-right"
+                type="button"
+              >
+                Вперёд
+              </button>
+              <ul class="review__pagination slider__pagination">
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagination__link--active"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagination__link--contrast"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagination__link--contrast"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagination__link--contrast"
+                  ></a>
+                </li>
+                <li class="slider__pagination-item">
+                  <a
+                    href="#"
+                    class="slider__pagination__link slider__pagination__link--contrast slider__pagination__link--more"
+                  ></a>
+                </li>
+              </ul>
+              <span class="slider__slide-number review__slide-number"
+                >1/26</span
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="about-us" id="about-us">
+        <div class="about-us__container">
+          <h2 class="about-us__title section-title">О нас</h2>
+          <div class="about-us__wrapper">
+            <div class="about-us__content-wrapper">
+              <h3 class="about-us__subtitle">О кондитере</h3>
+              <h4 class="about-us__slogan">Кондитер – как призвание</h4>
+              <p class="about-us__description">
+                Павел — профессиональный повар в различных гастрономических
+                областях, но однажды его сердце покорило кондитерское
+                искусство.<br />
+                С ранних лет он увлекался утонченным мастерством и обратился к
+                своим талантам как кондитер.
+              </p>
+              <h4 class="about-us__slogan">
+                Принцип – натуральные ингредиенты
+              </h4>
+              <p class="about-us__description">
+                Сегодня Павел радует изделиями не только близких, но и тех, кто
+                предпочитает качественную продукцию для торжества, а главным
+                принципом является выбор натуральных ингредиентов.
+              </p>
+              <ul class="about-us__social-links social-links">
+                <li class="social-links__item about-us__social-links-item">
+                  <a
+                    href="#"
+                    class="social-links__link social-links__link--instagram icon-instagram"
+                    >Павел в Инстаграме</a
+                  >
+                </li>
+                <li class="social-links__item about-us__social-links-item">
+                  <a
+                    href="#"
+                    class="social-links__link social-links__link--vk icon-vk"
+                    >Павел в Вконтакте</a
+                  >
+                </li>
+                <li class="social-links__item about-us__social-links-item">
+                  <a
+                    href="#"
+                    class="social-links__link social-links__link--twitter icon-twitter"
+                    >Павел в Твиттере</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="about-us__image-wrapper">
+              <picture>
+                <source
+                  media="(min-width: 1366px)"
+                  srcset="images/cook-photo-desktop.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="images/cook-photo-tablet.jpg"
+                />
+                <img
+                  src="images/cook-photo-mobile.jpg"
+                  alt="Кондитер Павел"
+                  class="about-us__image"
+                />
+              </picture>
+            </div>
+          </div>
+          <blockquote class="about-us__quote">
+            Я за простые рецепты. В Италии это называют cucina povera: когда
+            обычные ингредиенты превращаются в божественное блюдо.
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__container">
+          <h2 class="advantages__title section-title">Наши преимущества</h2>
+          <h3 class="advantages__subtitle">Почему нас выбирают ?</h3>
+          <ul class="advantages__list">
+            <li
+              class="advantages__item advantages__item--ingredients icon-ingredients"
+            >
+              <h4 class="advantages__feature-title">
+                Без искусственных добавок
+              </h4>
+              <p class="advantages__feature-description">
+                Работаем с натуральными ингредиентами и свежими продуктами
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--cake">
+              <h4 class="advantages__feature-title">
+                Свежий торт в день торжества
+              </h4>
+              <p class="advantages__feature-description">
+                Торты изготавливаются в течение суток до отправки
+              </p>
+            </li>
+          </ul>
+          <div class="advantages__additional-info">
+            <h2 class="advantages__title section-title">Забота о клиентах</h2>
+            <h3 class="advantages__subtitle">Для нас важна</h3>
+            <p class="advantages__feature-description">
+              Нам важно чтобы каждый торт был безупречным, как внутри, так и
+              снаружи, чтобы он был создан исключительно для вас и для вашего
+              события.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-instruction" id="order-instruction">
+        <div class="order-instruction__container">
+          <h2 class="order-instruction__title section-title">Как заказать</h2>
+          <ol class="order-instruction__list">
+            <li class="order-instruction__item">
+              <h3 class="order-instruction__subtitle">Срок заказа</h3>
+              <p class="order-instruction__description">
+                Размещать заказы желательно за 2-3 дня. <br />На выходные заказы
+                лучше размещать минимум за неделю.
+              </p>
+            </li>
+            <li class="order-instruction__item">
+              <h3 class="order-instruction__subtitle">Доставка по городу</h3>
+              <p class="order-instruction__description">
+                Доставка в пределах города 200 рублей. <br />При заказе на сумму
+                более 2000 доставка бесплатно.
+              </p>
+            </li>
+            <li class="order-instruction__item">
+              <h3 class="order-instruction__subtitle">Доставка за городом</h3>
+              <p class="order-instruction__description">
+                Доставка за пределами города рассчитывается индивидуально.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title section-title">Контакты</h2>
+          <h3 class="contacts__subtitle">Остались вопросы?</h3>
+          <div class="contacts__form-wrapper">
+            <p class="contacts__instruction">
+              Заполните форму ниже и наш кондитер свяжется с Вами
+            </p>
+            <form class="contacts__form contact-form">
+              <input
+                type="text"
+                class="contact-form__input"
+                name="name"
+                placeholder="Ваше имя"
+              />
+              <input
+                type="email"
+                class="contact-form__input"
+                name="email"
+                placeholder="Email адрес"
+              />
+              <input
+                type="text"
+                class="contact-form__input contact-form__input--question"
+                name="question"
+                placeholder="Ваш вопрос"
+              />
+              <textarea
+                class="contact-form__textarea"
+                name="message"
+                placeholder="Ваш вопрос"
+              ></textarea>
+              <button class="contact-form__submit button" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+          <div class="contacts__links-wrapper">
+            <p class="contacts__info">
+              Или позвоните по телефону:
+              <a href="tel:+79068999296" class="contacts__link"
+                >+7&nbsp;906&nbsp;899&nbsp;92&nbsp;96</a
+              >
+            </p>
+            <p class="contacts__info">
+              Наша почта:
+              <a href="mailto:bakerybypavel@mail.ru" class="contacts__link"
+                >bakerybypavel@mail.ru</a
+              >
+            </p>
+            <p class="contacts__info">Мы в соц. сетях:</p>
+            <ul class="contacts__social-links social-links">
+              <li
+                class="social-links__item social-links__item--large contacts__social-links-item"
+              >
+                <a
+                  href="#"
+                  class="social-links__link social-links__link--instagram icon-instagram"
+                  >Павел в Инстаграме</a
+                >
+              </li>
+              <li
+                class="social-links__item social-links__item--large contacts__social-links-item"
+              >
+                <a
+                  href="#"
+                  class="social-links__link social-links__link--vk icon-vk"
+                  >Павел в Вконтакте</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <h2 class="footer__logo logo logo--large">Cakes</h2>
+          <nav class="footer__navigation additional-navigation">
+            <ul class="additional-navigation__list">
+              <li class="additional-navigation__item">
+                <a href="#catalog" class="additional-navigation__link"
+                  >Наши торты</a
+                >
+              </li>
+              <li class="additional-navigation__item">
+                <a href="#order" class="additional-navigation__link"
+                  >Индивидуальный заказ</a
+                >
+              </li>
+              <li class="additional-navigation__item">
+                <a href="#reviews" class="additional-navigation__link"
+                  >Отзывы</a
+                >
+              </li>
+              <li class="additional-navigation__item">
+                <a href="#about-us" class="additional-navigation__link"
+                  >О нас</a
+                >
+              </li>
+              <li class="additional-navigation__item">
+                <a href="#order-instruction" class="additional-navigation__link"
+                  >Как заказать</a
+                >
+              </li>
+              <li class="additional-navigation__item">
+                <a href="#contacts" class="additional-navigation__link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contact contact">
+            <a
+              href="tel:+79068999296"
+              class="contact__phone contact__phone--contrast"
+              >+7&nbsp;906&nbsp;899&nbsp;92&nbsp;96</a
+            >
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">©&nbsp;2018&nbsp;Cakes</p>
+          <ul class="footer__social-links social-links">
+            <li
+              class="social-links__item social-links__item--conservative social-links__item--medium footer__social-links-item"
+            >
+              <a
+                href="#"
+                class="social-links__link social-links__link--instagram icon-instagram"
+                >Павел в Инстаграме</a
+              >
+            </li>
+            <li
+              class="social-links__item social-links__item--conservative social-links__item--medium footer__social-links-item"
+            >
+              <a
+                href="#"
+                class="social-links__link social-links__link--vk icon-vk"
+                >Павел в Вконтакте</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
