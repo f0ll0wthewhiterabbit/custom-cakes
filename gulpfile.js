@@ -20,7 +20,7 @@ const paths = {
     dest: "docs/"
   },
   js: {
-    src: ["src/js/main-navigation.js"],
+    src: ["src/js/picturefill.min.js", "src/js/main-navigation.js"],
     dest: "docs/js"
   },
   images: {
