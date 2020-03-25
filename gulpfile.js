@@ -13,15 +13,15 @@ const browserSync = require("browser-sync").create();
 const paths = {
   styles: {
     src: "src/scss/style.scss",
-    dest: "dest/css"
+    dest: "docs/css"
   },
   html: {
     src: "src/*.html",
-    dest: "dest/"
+    dest: "docs/"
   },
   js: {
     src: ["src/js/main-navigation.js"],
-    dest: "dest/js"
+    dest: "docs/js"
   },
   images: {
     src: "src/images/**"
@@ -30,7 +30,7 @@ const paths = {
     src: "src/fonts/**"
   },
   base: "src",
-  dest: "dest"
+  dest: "docs"
 };
 
 // CSS task
