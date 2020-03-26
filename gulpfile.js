@@ -29,6 +29,11 @@ const paths = {
   fonts: {
     src: "src/fonts/**"
   },
+  favicon: {
+    rootIcon: "src/favicon.ico",
+    config: "src/*.{xml,webmanifest}",
+    icons: "src/images/favicon/*.{png,svg}"
+  },
   base: "src",
   dest: "docs"
 };
@@ -93,7 +98,16 @@ function clean() {
 
 function copy() {
   return gulp
-    .src([paths.images.src, paths.fonts.src], { base: paths.base })
+    .src(
+      [
+        paths.images.src,
+        paths.fonts.src,
+        paths.favicon.rootIcon,
+        paths.favicon.config,
+        paths.favicon.icons
+      ],
+      { base: paths.base }
+    )
     .pipe(gulp.dest(paths.dest));
 }
 
